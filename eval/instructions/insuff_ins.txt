@@ -1,0 +1,1 @@
+Let's think step by step. If the condition is not enough to solve the question, output "LACK_CONDITION" as final answer.
