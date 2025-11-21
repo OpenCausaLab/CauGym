@@ -79,7 +79,7 @@ def main_processing(data_list, vllm_model_name, tokenizer_name, output_file_path
     print("\nStep 3: Initializing vLLM...")
     try:
         llm = LLM(model=vllm_model_name,
-                  tensor_parallel_size=2,
+                  tensor_parallel_size=8,
                   gpu_memory_utilization=0.9,
                   dtype=torch.bfloat16,
                  )

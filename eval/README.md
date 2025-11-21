@@ -18,6 +18,8 @@ bash scripts/model_generate.sh deepseek-ai/DeepSeek-R1-Distill-Qwen-14B 5 8192
 Using Local Model
 ```
 bash scripts/model_generate_local.sh /path/to/my/model Test_model 5 8192
+bash scripts/model_generate_local.sh /mnt/shared-storage-user/safewt-share/chenjunqi_models/rllm/checkpoints/deepcausal/grpo_ds_Llama-8b/actor/global_step_162 grpo_ds_Llama-8b 5 8192
+bash scripts/model_generate_local.sh /mnt/shared-storage-user/safewt-share/HuggingfaceModels/DeepSeek-R1-Distill-Llama-8B ds_Llama-8b 5 8192
 ```
 
 ## Evaluate the Result
