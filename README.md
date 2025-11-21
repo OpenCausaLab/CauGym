@@ -56,7 +56,6 @@ We construct five unique testing datasetsets to evaluate the agents across three
  
 ### installation
 ```
-git clone https://github.com/OpenCausaLab/DeepCausa.git
 cd DeepCausa
 cd eval
 conda create -n DeepCausa-eval python=3.10 -y
