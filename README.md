@@ -1,13 +1,13 @@
 # CAN LLMS SERVE AS CAUSAL INFERENCE AGENTS? A STUDY ON POST-TRAINING METHODS
 
-This project introduces DeepCausa, a comprehensive dataset and benchmark designed to systematically investigate whether targeted Post-Training methods can transform Large Language Models (LLMs) into highly effective and robust Causal Inference Agents.
+This project introduces CausaGym, a comprehensive dataset and benchmark designed to systematically investigate whether targeted Post-Training methods can transform Large Language Models (LLMs) into highly effective and robust Causal Inference Agents.
 
 Our research provides the first systematic evidence that online RL enables a smaller-scale LLM (14B) to outperform larger models and exhibit superior generalization and robustness across complex causal tasks.
 
 
-## DeepCausa Dataset Introduction
+## CausaGym Dataset Introduction
 
-The DeepCausa dataset is composed of training datasets for reinforcing causal abilities and testing datasets for comprehensive evaluation. 
+The CausaGym dataset is composed of training datasets for reinforcing causal abilities and testing datasets for comprehensive evaluation. 
 
 ### Training Dataset 
 
@@ -46,20 +46,20 @@ We construct five unique testing datasetsets to evaluate the agents across three
 
 | **Evaluation Dimension** | **Test Set Name** | **Purpose** | 
 | ----- | ----- | ----- | 
-| **Generalization** | `DeepCausa-rephrased` | Tests whether the model understands the semantic meaning of the question, rather than merely memorizing training phraseology. | 
-| **Internalization** | `DeepCausa-omitted` | Omits the explicit task instruction, testing the model's ability to independently recognize and apply causal theorems. | 
-| **Internalization** | `DeepCausa-deconfounding` | Contains problems solvable only by correctly applying the **Backdoor Criterion** to remove spurious correlations. |  
-| **Robustness** | `DeepCausa-redundant` | Introduces extraneous (correct but irrelevant) information to test the model's ability to disregard irrelevant interference. | 
-| **Robustness** | `DeepCausa-insufficient` | Removes necessary conditional probability information to test the model's ability to identify missing data and output `LACK_CONDITION`. | 
+| **Generalization** | `CausaGym-rephrased` | Tests whether the model understands the semantic meaning of the question, rather than merely memorizing training phraseology. | 
+| **Internalization** | `CausaGym-omitted` | Omits the explicit task instruction, testing the model's ability to independently recognize and apply causal theorems. | 
+| **Internalization** | `CausaGym-deconfounding` | Contains problems solvable only by correctly applying the **Backdoor Criterion** to remove spurious correlations. |  
+| **Robustness** | `CausaGym-redundant` | Introduces extraneous (correct but irrelevant) information to test the model's ability to disregard irrelevant interference. | 
+| **Robustness** | `CausaGym-insufficient` | Removes necessary conditional probability information to test the model's ability to identify missing data and output `LACK_CONDITION`. | 
 
-## Quick Start for DeepCausa Eval
+## Quick Start for CausaGym Eval
  
 ### installation
 ```
-cd DeepCausa
+cd CausaGym
 cd eval
-conda create -n DeepCausa-eval python=3.10 -y
-conda activate DeepCausa-eval
+conda create -n CausaGym-eval python=3.10 -y
+conda activate CausaGym-eval
 pip install vllm
 pip install datasets
 ```
@@ -87,6 +87,6 @@ bash scripts/model_evaluate.sh Test_model
 
 ## Citation
 
-If you use the DeepCausa dataset or reference our research on post-training methods, please cite our paper:
+If you use the CausaGym dataset or reference our research on post-training methods, please cite our paper:
 ```
 ```

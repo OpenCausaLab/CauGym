@@ -1,10 +1,10 @@
 # Quick Start
 ## installation
 ```
-cd DeepCausa
+cd CausaGym
 cd eval
-conda create -n DeepCausa-eval python=3.10 -y
-conda activate DeepCausa-eval
+conda create -n CausaGym-eval python=3.10 -y
+conda activate CausaGym-eval
 pip install vllm
 pip install datasets
 ```
