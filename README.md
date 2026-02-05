@@ -1,4 +1,4 @@
-# CAN LLMS SERVE AS CAUSAL INFERENCE AGENTS? A STUDY ON POST-TRAINING METHODS
+# Can Post-Training Transform LLMs into Causal Reasoners?
 
 This project introduces CauGym, a comprehensive dataset and benchmark designed to systematically investigate whether targeted Post-Training methods can transform Large Language Models (LLMs) into highly effective and robust Causal Inference Agents.
 
