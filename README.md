@@ -99,4 +99,13 @@ bash scripts/model_evaluate.sh Test_model
 
 If you use the CauGym dataset or reference our research on post-training methods, please cite our paper:
 ```
+@misc{chen2026posttrainingtransformllmscausal,
+      title={Can Post-Training Transform LLMs into Causal Reasoners?}, 
+      author={Junqi Chen and Sirui Chen and Chaochao Lu},
+      year={2026},
+      eprint={2602.06337},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.06337}, 
+}
 ```
